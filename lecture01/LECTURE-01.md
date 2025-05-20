@@ -8,7 +8,7 @@ Nesta primeira aula, aprenderemos como criar um servidor web básico usando a li
 
 ---
 
-## ✅ Code Summary
+## ✅ Code Summary 
 
 ```go
 http.HandleFunc("/", handlerHome)
