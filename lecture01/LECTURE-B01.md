@@ -34,7 +34,7 @@ http://localhost:8080/
 
 If you created an `index.html` and updated `main.go` to serve it, it will load automatically.
 
-You can also test using:
+You can also test using :
 
 ```bash
 curl http://localhost:8080/

@@ -44,7 +44,7 @@ func handlerAbout(w http.ResponseWriter, r *http.Request)
 ```bash
 go run main.go
 ```
-4. Open your browser and access:
+4. Open your browser and access :
 ```
 http://localhost:8080/
 http://localhost:8080/about

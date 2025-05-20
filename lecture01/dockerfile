@@ -1,18 +1,39 @@
+# 🇺🇸 Use the official Go image to compile the application
+# 🇧🇷 Usa a imagem oficial do Go para compilar a aplicação
 FROM golang:1.21 AS builder
 
+# 🇺🇸 Set the working directory inside the container
+# 🇧🇷 Define o diretório de trabalho dentro do container
 WORKDIR /app
 
+# 🇺🇸 Copy all project files into the container (source code, go.mod, etc.)
+# 🇧🇷 Copia todos os arquivos do projeto para dentro do container (código fonte, go.mod, etc.)
 COPY . .
 
+# 🇺🇸 Compile the Go app for Linux with no CGO dependencies (static binary)
+# 🇧🇷 Compila a aplicação Go para Linux sem dependências CGO (binário estático)
 RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o webserver
 
+# 🇺🇸 Start a new minimal runtime container using Alpine Linux
+# 🇧🇷 Inicia um novo container mínimo usando Alpine Linux
 FROM alpine:latest
 
+# 🇺🇸 Set the working directory for the final container
+# 🇧🇷 Define o diretório de trabalho para o container final
 WORKDIR /root/
 
+# 🇺🇸 Copy the compiled binary from the builder stage
+# 🇧🇷 Copia o binário compilado da etapa de build
 COPY --from=builder /app/webserver .
+
+# 🇺🇸 Copy the HTML file to be served by the application
+# 🇧🇷 Copia o arquivo HTML para ser servido pela aplicação
 COPY --from=builder /app/index.html .
 
+# 🇺🇸 Inform Docker that the container listens on port 8080
+# 🇧🇷 Informa ao Docker que o container escuta na porta 8080
 EXPOSE 8080
 
+# 🇺🇸 Set the default command to run the Go web server
+# 🇧🇷 Define o comando padrão para executar o servidor web em Go
 CMD ["./webserver"]
