@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Phone Listings</title>
+</head>
+<body>
+    <h1>Available Phones</h1>
+    <ul>
+        {{range .}}
+            <li><strong>{{.Brand}}</strong> - {{.Model}}: R$ {{.Price}}</li>
+        {{else}}
+            <li>No phones available.</li>
+        {{end}}
+    </ul>
+    <a href="/about">About</a>
+</body>
+</html>

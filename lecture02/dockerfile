@@ -1,0 +1,33 @@
+# Dockerfile for Lecture 02 – Go HTML Templates
+
+# 🇺🇸 Builder stage – compiles Go binary
+# 🇧🇷 Etapa de build – compila o binário Go
+FROM golang:1.21 AS builder
+
+WORKDIR /app
+
+# 🇺🇸 Copy all source files
+# 🇧🇷 Copia todos os arquivos fonte
+COPY . .
+
+# 🇺🇸 Build the binary as a static executable
+# 🇧🇷 Compila o binário como executável estático
+RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o webserver
+
+# 🇺🇸 Runtime stage – runs the compiled binary
+# 🇧🇷 Etapa de runtime – executa o binário compilado
+FROM alpine:latest
+
+WORKDIR /root/
+
+# 🇺🇸 Copy binary
+# 🇧🇷 Copia o binário
+COPY --from=builder /app/webserver .
+
+# 🇺🇸 Copy HTML templates folder
+# 🇧🇷 Copia a pasta de templates HTML
+COPY --from=builder /app/templates ./templates
+
+EXPOSE 8080
+
+CMD ["./webserver"]
