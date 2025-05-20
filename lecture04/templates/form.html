@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Register Phone</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <h1>Register a New Phone</h1>
+    {{if .Error}}<p class="error">{{.Error}}</p>{{end}}
+    <form method="POST" action="/register">
+        <label>Model: <input type="text" name="model" value="{{.Model}}"></label><br><br>
+        <label>Brand: <input type="text" name="brand" value="{{.Brand}}"></label><br><br>
+        <label>Price: <input type="text" name="price" value="{{.Price}}"></label><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
