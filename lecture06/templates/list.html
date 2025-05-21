@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Phone List</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <h1>Registered Phones</h1>
+    <ul>
+        {{range .}}
+        <li><strong>{{.Brand}}</strong> - {{.Model}} - R$ {{.Price}}</li>
+        {{else}}
+        <li>No phones found.</li>
+        {{end}}
+    </ul>
+    <a href="/register">Register another</a>
+</body>
+</html>
