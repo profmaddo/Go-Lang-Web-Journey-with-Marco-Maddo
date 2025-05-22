@@ -96,4 +96,4 @@ git push -u origin main
 
 ---
 
-Happy coding! | Bons estudos! 🚀
+👨‍🏫 Happy coding! | Bons estudos! 🚀
