@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Register Phone</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <h1>Register Phone</h1>
+    {{if .}}<p class="error">{{.}}</p>{{end}}
+    <form method="POST" action="/register">
+        <label>Model: <input type="text" name="model"></label><br><br>
+        <label>Brand: <input type="text" name="brand"></label><br><br>
+        <label>Price: <input type="text" name="price"></label><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

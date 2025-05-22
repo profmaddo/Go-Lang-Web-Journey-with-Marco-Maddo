@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Phones</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <h1>Available Phones</h1>
+    <ul>
+        {{range .}}
+            <li><strong>{{.Brand}}</strong> - {{.Model}}: R$ {{.Price}}</li>
+        {{end}}
+    </ul>
+    <a href="/about">About</a>
+</body>
+</html>
