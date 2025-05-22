@@ -10,11 +10,11 @@
 
 ## 🔐 What You’ll Learn | O que você vai aprender
 
-- ✅ How to validate user credentials with bcrypt  
-- ✅ How to create and read secure cookies  
-- ✅ How to implement a protected dashboard  
-- ✅ How to destroy sessions (logout)  
-- ✅ How to integrate login with SQLite user database
+- ✅ How to validate user credentials with bcrypt.  
+- ✅ How to create and read secure cookies.  
+- ✅ How to implement a protected dashboard.  
+- ✅ How to destroy sessions (logout).  
+- ✅ How to integrate login with SQLite user database.
 
 ---
 
