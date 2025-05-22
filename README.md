@@ -50,6 +50,23 @@ Feel free to open issues, suggest improvements or share this project with other 
 
 ---
 
-Happy coding! 🎉 | Bons estudos! 📘
+## 🙋 Need Help?
+
+🇺🇸 If you run into problems, feel free to [open an issue](https://github.com/profmaddo/Go-Lang-Web-Journey-with-Marco-Maddo.git/issues).
+
+🇧🇷 Se tiver dificuldades, sinta-se à vontade para [abrir uma issue](https://github.com/profmaddo/Go-Lang-Web-Journey-with-Marco-Maddo.git/issues).
+
+---
+
+## 👨‍🏫 About This Course
+
+🇺🇸 This course is a voluntary project maintained by [Professor Marco Maddo](https://www.linkedin.com/in/marcomaddo/) and sponsored by [TSSTI Tecnologia](https://www.linkedin.com/company/tssti/?viewAsMember=true), a company specialized in E-Learning.
+
+🇧🇷 Este curso é um projeto voluntário mantido pelo [Professor Marco Maddo](https://www.linkedin.com/in/marcomaddo/) e patrocinado pela [TSSTI Tecnologia](https://www.linkedin.com/company/tssti/?viewAsMember=true), empresa especializada em E-Learning.
+
+---
+
+👨‍🏫 Happy coding! | Bons estudos! 🚀
+
 
 
