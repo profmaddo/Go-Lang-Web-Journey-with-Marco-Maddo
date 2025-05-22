@@ -91,5 +91,5 @@ func lecture06Handler(w http.ResponseWriter, r *http.Request) {
 	w.Write([]byte("Lecture 06 - Conteúdo aqui..."))
 }
 func lecture07Handler(w http.ResponseWriter, r *http.Request) {
-	w.Write([]byte("Lecture 07 - Conteúdo aqui..."))
+	w.Write([]byte("Lecture 07 - Conteúdo aqui...."))
 }
