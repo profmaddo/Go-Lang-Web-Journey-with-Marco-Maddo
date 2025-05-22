@@ -82,9 +82,9 @@ git push -u origin main
 
 ## 🙋 Need Help?
 
-🇺🇸 If you run into problems, feel free to [open an issue](https://github.com/profmaddo/Go-Lang-Web-Journey-with-Marco-Maddo.git/issues).
+🇺🇸 If you run into problems, feel free to [open an issue](https://github.com/profmaddo/Go-Lang-Web-Journey-with-Marco-Maddo/issues).
 
-🇧🇷 Se tiver dificuldades, sinta-se à vontade para [abrir uma issue](https://github.com/profmaddo/Go-Lang-Web-Journey-with-Marco-Maddo.git/issues).
+🇧🇷 Se tiver dificuldades, sinta-se à vontade para [abrir uma issue](https://github.com/profmaddo/Go-Lang-Web-Journey-with-Marco-Maddo/issues).
 
 ---
 
